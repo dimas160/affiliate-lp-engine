@@ -8,42 +8,59 @@
         content="width=device-width, initial-scale=1.0"
     >
 
+    <!-- SEO -->
     <meta
         name="description"
-        content="Landing page produk"
+        content="Temukan produk pilihan yang dapat membantu memenuhi kebutuhan Anda."
     >
-    <meta
-    name="description"
-    content="..."
-    >
-    
+
     <meta
         name="robots"
         content="index, follow"
     >
-    
-    <meta
-        property="og:title"
-        content="..."
+
+    <title>Produk Pilihan Anda</title>
+
+    <!-- Canonical -->
+    <link
+        rel="canonical"
+        href="https://YOUR-DOMAIN.com/"
     >
-    
-    <meta
-        property="og:description"
-        content="..."
-    >
-    
+
+    <!-- Open Graph -->
     <meta
         property="og:type"
         content="website"
     >
-    
+
     <meta
-        property="og:image"
-        content="..."
+        property="og:title"
+        content="Produk Pilihan Anda"
     >
 
-    <title>Produk Pilihan Anda</title>
+    <meta
+        property="og:description"
+        content="Temukan produk pilihan yang dapat membantu memenuhi kebutuhan Anda."
+    >
 
+    <meta
+        property="og:url"
+        content="https://YOUR-DOMAIN.com/"
+    >
+
+    <meta
+        property="og:image"
+        content="https://YOUR-DOMAIN.com/assets/images/og-image.jpg"
+    >
+
+    <!-- Favicon -->
+    <link
+        rel="icon"
+        href="favicon/favicon.ico"
+        type="image/x-icon"
+    >
+
+    <!-- Stylesheet -->
     <link
         rel="stylesheet"
         href="css/style.css"
@@ -52,11 +69,18 @@
 
 <body>
 
+    <!-- HEADER -->
     <header>
         <div class="container">
-            <a href="/" class="logo">
+
+            <a
+                href="/"
+                class="logo"
+                aria-label="Kembali ke halaman utama"
+            >
                 BRAND
             </a>
+
         </div>
     </header>
 
@@ -64,7 +88,10 @@
     <main>
 
         <!-- HERO -->
-        <section id="hero">
+        <section
+            id="hero"
+            aria-labelledby="hero-title"
+        >
             <div class="container">
 
                 <div class="hero-content">
@@ -73,14 +100,28 @@
                         SOLUSI UNTUK ANDA
                     </span>
 
-                    <h1>
+                    <h1 id="hero-title">
                         Headline Utama Produk
                     </h1>
 
                     <p>
                         Jelaskan manfaat utama produk
-                        secara singkat dan jelas.
+                        secara singkat, jelas, dan menarik.
                     </p>
+
+                    <!-- PRODUCT IMAGE PLACEHOLDER -->
+                    <div class="product-image">
+
+                        <img
+                            src="assets/images/product-main.webp"
+                            alt="Gambar produk"
+                            width="600"
+                            height="600"
+                            loading="eager"
+                            fetchpriority="high"
+                        >
+
+                    </div>
 
                     <a
                         href="#"
@@ -88,9 +129,11 @@
                         id="cta-hero"
                         data-cta="hero"
                         data-destination="affiliate"
+                        aria-label="Lihat produk"
                     >
                         Lihat Produk
                     </a>
+
                 </div>
 
             </div>
@@ -98,10 +141,13 @@
 
 
         <!-- PROBLEM -->
-        <section id="problem">
+        <section
+            id="problem"
+            aria-labelledby="problem-title"
+        >
             <div class="container">
 
-                <h2>
+                <h2 id="problem-title">
                     Apakah Anda Mengalami Masalah Ini?
                 </h2>
 
@@ -109,22 +155,28 @@
 
                     <article>
                         <h3>Masalah 1</h3>
+
                         <p>
-                            Penjelasan masalah.
+                            Jelaskan masalah yang sering
+                            dialami calon pembeli.
                         </p>
                     </article>
 
                     <article>
                         <h3>Masalah 2</h3>
+
                         <p>
-                            Penjelasan masalah.
+                            Jelaskan masalah lain yang
+                            relevan dengan produk.
                         </p>
                     </article>
 
                     <article>
                         <h3>Masalah 3</h3>
+
                         <p>
-                            Penjelasan masalah.
+                            Jelaskan masalah ketiga
+                            yang ingin diselesaikan.
                         </p>
                     </article>
 
@@ -135,16 +187,20 @@
 
 
         <!-- SOLUTION -->
-        <section id="solution">
+        <section
+            id="solution"
+            aria-labelledby="solution-title"
+        >
             <div class="container">
 
-                <h2>
+                <h2 id="solution-title">
                     Kenalkan Solusinya
                 </h2>
 
                 <p>
-                    Penjelasan mengenai produk
-                    dan bagaimana produk membantu.
+                    Jelaskan produk dan bagaimana produk
+                    tersebut membantu menyelesaikan masalah
+                    calon pengguna.
                 </p>
 
             </div>
@@ -152,10 +208,13 @@
 
 
         <!-- BENEFITS -->
-        <section id="benefits">
+        <section
+            id="benefits"
+            aria-labelledby="benefits-title"
+        >
             <div class="container">
 
-                <h2>
+                <h2 id="benefits-title">
                     Manfaat Utama
                 </h2>
 
@@ -163,22 +222,25 @@
 
                     <article>
                         <h3>Benefit 1</h3>
+
                         <p>
-                            Penjelasan benefit.
+                            Penjelasan mengenai manfaat pertama.
                         </p>
                     </article>
 
                     <article>
                         <h3>Benefit 2</h3>
+
                         <p>
-                            Penjelasan benefit.
+                            Penjelasan mengenai manfaat kedua.
                         </p>
                     </article>
 
                     <article>
                         <h3>Benefit 3</h3>
+
                         <p>
-                            Penjelasan benefit.
+                            Penjelasan mengenai manfaat ketiga.
                         </p>
                     </article>
 
@@ -189,46 +251,73 @@
 
 
         <!-- HOW IT WORKS -->
-        <section id="how-it-works">
+        <section
+            id="how-it-works"
+            aria-labelledby="how-title"
+        >
             <div class="container">
 
-                <h2>
+                <h2 id="how-title">
                     Cara Menggunakan
                 </h2>
+
+                <p>
+                    Jelaskan langkah penggunaan produk
+                    secara sederhana.
+                </p>
 
             </div>
         </section>
 
 
         <!-- SOCIAL PROOF -->
-        <section id="social-proof">
+        <section
+            id="social-proof"
+            aria-labelledby="social-title"
+        >
             <div class="container">
 
-                <h2>
+                <h2 id="social-title">
                     Apa Kata Pengguna?
                 </h2>
+
+                <p>
+                    Testimoni atau bukti sosial dapat
+                    ditambahkan setelah produk ditentukan.
+                </p>
 
             </div>
         </section>
 
 
         <!-- FAQ -->
-        <section id="faq">
+        <section
+            id="faq"
+            aria-labelledby="faq-title"
+        >
             <div class="container">
 
-                <h2>
+                <h2 id="faq-title">
                     Pertanyaan yang Sering Ditanyakan
                 </h2>
+
+                <p>
+                    FAQ produk akan ditambahkan setelah
+                    produk dan target market ditentukan.
+                </p>
 
             </div>
         </section>
 
 
         <!-- FINAL CTA -->
-        <section id="final-cta">
+        <section
+            id="final-cta"
+            aria-labelledby="final-cta-title"
+        >
             <div class="container">
 
-                <h2>
+                <h2 id="final-cta-title">
                     Siap Mencobanya?
                 </h2>
 
@@ -238,6 +327,7 @@
                     id="cta-bottom"
                     data-cta="bottom"
                     data-destination="affiliate"
+                    aria-label="Lihat produk di Shopee"
                 >
                     Lihat Produk di Shopee
                 </a>
@@ -248,6 +338,7 @@
     </main>
 
 
+    <!-- FOOTER -->
     <footer>
         <div class="container">
 
@@ -259,7 +350,11 @@
     </footer>
 
 
-    <script src="js/app.js"></script>
+    <!-- JavaScript -->
+    <script
+        src="js/app.js"
+        defer
+    ></script>
 
 </body>
 </html>
